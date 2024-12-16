@@ -1,6 +1,18 @@
 # 基于 ChatGPT API 的联网检索云函数
 
-## 项目简介
+## 整体项目 collegeAi 背景
+简要介绍：CollegeAi 是一个创新的生涯规划辅助平台，旨在通过 GPT 技术整合网络信息，提供个性化生涯规划指导，帮助用户明确职业方向和专业认知。
+亮点有：
+
+- 采用 Next.js 框架优化 SEO 和提升开发效率，并接入 Antd 组件库进行快速开发
+- 使用 Node.js 的 Nest.js 框架和 MySQL 数据库搭建稳定且可扩展的后端服务，确保了项目的稳定性和扩展性。
+- 整合 AI 服务，采用阿里云 Serverless 云函数开发 AI 搜索功能，加速开发调试并方便部署。
+- 对关键功能AI聊天调优，自主开发 gpt-search 联网搜索功能，使用 puppeteer 无头浏览器构建准确且高效的 AI 搜索中间件。
+- 对 AI 大模型进行 prompt 优化，使用高级 fine-tuning 及 function-calling 等微调减少 token 使用并优化响应效果。
+
+项目分为[前端部分](https://github.com/Collage-Ai/CollegeAi-fe)，[后端部分](https://github.com/Collage-Ai/CollegeAi-be)，[AI中间件](https://github.com/abandon888/gptSearchWebFn)这三个仓库。本项目为 AI 中间件仓库。
+
+## 本项目简介
 
 本项目是一个高效的云函数，基于 ChatGPT API 构建，专为实现高级联网检索功能而设计。项目采用 JavaScript 编写，支持在阿里云的云函数平台上无缝部署，提供了一种简便且高效的方式来利用 OpenAI 的先进功能，包括函数调用和模型微调等。
 
